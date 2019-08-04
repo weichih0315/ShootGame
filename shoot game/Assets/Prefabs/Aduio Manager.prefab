@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1045619879414666}
+  m_IsPrefabParent: 1
+--- !u!1 &1045619879414666
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224946716856910496}
+  - component: {fileID: 114446575075068920}
+  - component: {fileID: 114215909186970102}
+  - component: {fileID: 114060379250610936}
+  m_Layer: 5
+  m_Name: Aduio Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1898601192831658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224070952553863072}
+  - component: {fileID: 81667208572502762}
+  m_Layer: 5
+  m_Name: Audio Listener
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &81667208572502762
+AudioListener:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1898601192831658}
+  m_Enabled: 1
+--- !u!114 &114060379250610936
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1045619879414666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52fc94e9052ba5b4584b2e9b9796090c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundGroups:
+  - groupID: Impact
+    group:
+    - {fileID: 8300000, guid: 425959a0d1b36234588886880393c3cb, type: 3}
+    - {fileID: 8300000, guid: f35c0ecd281e85445b69f07c39116e30, type: 3}
+    - {fileID: 8300000, guid: 1fbcf7553580ecf4984feeff926a3316, type: 3}
+  - groupID: Enemy Death
+    group:
+    - {fileID: 8300000, guid: fc236852b4c094f41b057df7baf8bfea, type: 3}
+    - {fileID: 8300000, guid: abd4f54e0f65db8429cb71fafabd69db, type: 3}
+  - groupID: Enemy Attack
+    group:
+    - {fileID: 8300000, guid: c37066602887f414999f9f297a139765, type: 3}
+  - groupID: Level Complete
+    group:
+    - {fileID: 8300000, guid: 7a3c99c5bc64d594b920de141cf2398b, type: 3}
+  - groupID: Player Death
+    group:
+    - {fileID: 8300000, guid: aa8e6a69f58bd8a4caeb10007baffb1f, type: 3}
+--- !u!114 &114215909186970102
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1045619879414666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcf7b8b89b5ceb14e9872982bbdf6f0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTheme: {fileID: 8300000, guid: 95644b85c6be62d46b1a0404d0fe1c8f, type: 3}
+  menuTheme: {fileID: 8300000, guid: a32c9ab67e766974aaabc474dd043815, type: 3}
+--- !u!114 &114446575075068920
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1045619879414666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec43c35f6e8e86b48b32cfdeae424180, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!224 &224070952553863072
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1898601192831658}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224946716856910496}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.0000009536743, y: -0.00000047683716}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224946716856910496
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1045619879414666}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5890625, y: 0.5890625, z: 0.5890625}
+  m_Children:
+  - {fileID: 224070952553863072}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
